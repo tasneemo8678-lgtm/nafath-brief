@@ -41,8 +41,7 @@ Anonymization wipes out all identifiers, making it impossible to trace the data 
 Resource: GDPR Article 4 — Definitions of Personal Data, Anonymization, and Pseudonymization — https://gdpr-info.eu/art-4-gdpr
 
 ## Misconception in My Track
-A common misconception is that every API change requires a MAJOR version increase. In fact, Semantic Versioning distinguishes changes by their compatibility with the existing public API. A backward-compatible bug fix requires a PATCH release, while adding backward-compatible functionality requires a MINOR release. A change that breaks backward compatibility requires a MAJOR release. Therefore, the project team should evaluate compatibility before selecting a version number. The Semantic Versioning specification states: “MAJOR version when you make incompatible API changes.”
-
+One common misunderstanding in the world of software engineering is the belief that any tweak to the API automatically calls for a MAJOR version increase. However, according to the rules of Semantic Versioning, a MAJOR version bump is only necessary when changes disrupt backward compatibility. This typically happens when you remove or modify an endpoint in a way that existing applications can no longer work with it. If you're adding new features that still play nicely with the old ones, you should bump up the MINOR version instead. And for those pesky bug fixes? They just require a PATCH update. You can find this important distinction laid out in the “Specification” section of Semantic Versioning 2.0.0.
 Resource evidence: Semantic Versioning 2.0.0, section 8 - https://semver.org/spec/v2.0.0.html
 
 ## Open Question
