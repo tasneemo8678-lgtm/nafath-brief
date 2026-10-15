@@ -3,8 +3,13 @@
 ## NAFATH-V3 Progress
 
 - db9c844 — skeleton: NAFATH-V3
-- b5d56cf — overview: connect the six subtopics
+- b291446 — fix: Revise overview for clarity and conciseness
 - 09b4b66 — research: software, ai, mobile
-- 3baa662 — research: networking, cybersecurity, data
+- e6b65b3 — fix: add cybersecurity, data, networking
 - 65ad98e — analysis: misconception and open question
-- 10fc0e9 — revise: overview
+- d3b2695 — fix: add cybersecurity and misconception sections
+ 
+
+
+- 23e591c — fix: refine software section
+
