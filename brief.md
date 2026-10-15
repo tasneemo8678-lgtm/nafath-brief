@@ -3,7 +3,12 @@ Track: Software
 
 ## Overview
 
-A trustworthy AI assistant for a public service depends on several IT fields working together. Software engineering helps maintain a stable API so the mobile app and its backend can communicate reliably as the service evolves. Artificial intelligence enables the assistant to understand questions and generate useful responses, while Retrieval-Augmented Generation (RAG) can ground answers in official government information. Mobile security protects communication between the app and its servers. Networking provides addressing and connectivity for the growing number of citizens and devices using the service. Cybersecurity helps defend the assistant against attacks, including malicious instructions designed to manipulate its behavior. Data management protects citizens’ chat logs and personal information through appropriate privacy controls. These fields must be considered together because a failure in one area can affect the reliability, security, or privacy of the whole service. In particular, the team must apply Semantic Versioning correctly when deciding whether public API changes require a MAJOR, MINOR, or PATCH release.
+software engineering keeps the API stable so the mobile app and its backend can communicate reliably as the service grows.
+AI helps the assistant understand questions and give useful answers, while retrieval augmented generation (RAG) connects responses to official government information.
+mobile security protects communication between the app and its servers.
+networking provides addressing and connectivity for the increasing number of citizens and devices using the service.
+cybersecurity defends the assistant against attacks, including malicious instructions meant to change its behavior.
+data management protects citizens, chat logs and personal information with proper privacy controls. these fields must be considered together, and the team must apply semantic versioning correctly when deciding if API changes require a major, minor, or patch release.
 
 ## Software
 Under Semantic Versioning, the assistant's public API must increase its MAJOR version when a change breaks backward compatibility. A MINOR version increase is required when new functionality is added in a backward-compatible way. A PATCH version increase is required for backward-compatible bug fixes. For example, removing an API endpoint may require a MAJOR release, adding an optional feature may require MINOR, and fixing an internal error may require PATCH. Clear versioning helps app developers plan updates safely.
