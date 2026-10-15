@@ -37,5 +37,9 @@ Anonymization removes identifying information so that a person can no longer be 
 Resource: GDPR Article 4 and Recital 26 - https://gdpr-info.eu/art-4-gdpr/
 
 ## Misconception in My Track
+A common misconception is that every API change requires a MAJOR version increase. In fact, Semantic Versioning distinguishes changes by their compatibility with the existing public API. A backward-compatible bug fix requires a PATCH release, while adding backward-compatible functionality requires a MINOR release. A change that breaks backward compatibility requires a MAJOR release. Therefore, the project team should evaluate compatibility before selecting a version number. The Semantic Versioning specification states: “MAJOR version when you make incompatible API changes.”
+
+Resource evidence: Semantic Versioning 2.0.0, section 8 - https://semver.org/spec/v2.0.0.html
 
 ## Open Question
+How can the project team automatically test API compatibility before releasing a new version, so that mobile app updates do not unexpectedly break existing users?
