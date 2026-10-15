@@ -22,10 +22,19 @@ iOS App Transport Security (ATS) improves privacy and data integrity by requirin
 Resource: Preventing Insecure Network Connections - https://developer.apple.com/documentation/security/preventing-insecure-network-connections
 
 ## Networking
+IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses, providing a vastly larger address space. As more citizens connect through phones, computers, and smart devices, IPv4 addresses become harder to allocate without additional techniques such as address translation. IPv6 supports a much greater number of uniquely addressable devices and simpler address autoconfiguration. The government service should ensure its network infrastructure supports IPv6 while considering compatibility with IPv4 systems.
+
+Resource: RFC 8200: Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
 
 ## Cybersecurity
+Prompt injection occurs when malicious instructions attempt to manipulate an AI system into ignoring its intended rules. Direct prompt injection comes from a user's input, while indirect prompt injection is hidden in external content the assistant retrieves or processes. Two risk-reduction measures are to treat retrieved content as untrusted data and to restrict the assistant's permissions using least privilege. Input screening and testing can help, but no single defense eliminates every attack.
+
+Resource: NIST AI 100-2 E2025: Adversarial Machine Learning - https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 
 ## Data
+Anonymization removes identifying information so that a person can no longer be identified using means reasonably likely to be used. Pseudonymization replaces direct identifiers with codes or aliases, but a person may still be re-identified using additional information kept separately. Therefore, pseudonymized chat logs remain personal data under the GDPR. Properly anonymized data may fall outside the GDPR's scope if identification is no longer reasonably possible. The government entity should assess re-identification risks before treating logs as anonymous.
+
+Resource: GDPR Article 4 and Recital 26 - https://gdpr-info.eu/art-4-gdpr/
 
 ## Misconception in My Track
 
