@@ -11,17 +11,17 @@ cybersecurity defends the assistant against attacks, including malicious instruc
 data management protects citizens, chat logs and personal information with proper privacy controls. these fields must be considered together, and the team must apply semantic versioning correctly when deciding if API changes require a major, minor, or patch release.
 
 ## Software
-Under Semantic Versioning, the assistant's public API must increase its MAJOR version when a change breaks backward compatibility. A MINOR version increase is required when new functionality is added in a backward-compatible way. A PATCH version increase is required for backward-compatible bug fixes. For example, removing an API endpoint may require a MAJOR release, adding an optional feature may require MINOR, and fixing an internal error may require PATCH. Clear versioning helps app developers plan updates safely.
+Under Semantic Versioning, whenever there’s a change in the assistant’s public API that breaks backward compatibility—like altering or removing an endpoint that existing applications depend on—you need to bump up the MAJOR version. If you’re adding new features but everything continues to function well with older versions, that’s the time to increase the MINOR version. This organized method helps developers implement updates with confidence, reducing the chances of running into unexpected problems.
 
 Resource: Semantic Versioning 2.0.0 - https://semver.org/spec/v2.0.0.html
 
 ## AI
-Retrieval-Augmented Generation (RAG) combines information retrieval with AI text generation. Before answering a citizen's question, the assistant retrieves relevant information from a trusted knowledge source, such as official government service pages, and uses that information to generate a response. RAG can reduce incorrect answers by grounding responses in current, relevant evidence instead of relying only on the model's stored knowledge. However, it cannot eliminate errors, so source quality and answer verification remain important.
+Retrieval augmented generation, or RAG for short, is a cool blend of information retrieval and AI text generation. Before the assistant jumps in with an answer, it first digs up relevant information from reliable sources, like government service pages. This way, it can craft a response that's more accurate and grounded. It’s a step up from just relying on what’s stored in the model’s memory, but it’s still super important to ensure the quality and verification of those sources.
 
 Resource: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks - https://arxiv.org/abs/2005.11401
 
 ## Mobile
-iOS App Transport Security (ATS) improves privacy and data integrity by requiring secure network connections that meet Apple's security requirements. When an app uses standard networking APIs such as URLSession, its HTTP connections must use HTTPS. If the app tries to contact a plain HTTP endpoint, ATS blocks the connection by default, and the request fails. Developers should configure the server for HTTPS rather than weaken ATS protections through exceptions.
+iOS App Transport Security (ATS) is all about keeping your connections secure by mandating HTTPS for every network request. If an app attempts to access a plain HTTP endpoint, ATS will automatically block that request. This is a great way to ensure that privacy and data integrity are maintained between the app and its servers. Developers are encouraged to set up their servers for HTTPS instead of compromising ATS protections with exceptions.
 
 Resource: Preventing Insecure Network Connections - https://developer.apple.com/documentation/security/preventing-insecure-network-connections
 
