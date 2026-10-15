@@ -26,19 +26,19 @@ iOS App Transport Security (ATS) is all about keeping your connections secure by
 Resource: Preventing Insecure Network Connections - https://developer.apple.com/documentation/security/preventing-insecure-network-connections
 
 ## Networking
-IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses, providing a vastly larger address space. As more citizens connect through phones, computers, and smart devices, IPv4 addresses become harder to allocate without additional techniques such as address translation. IPv6 supports a much greater number of uniquely addressable devices and simpler address autoconfiguration. The government service should ensure its network infrastructure supports IPv6 while considering compatibility with IPv4 systems.
+IPv4 uses 32-bit addresses, which limits the number of unique devices that can connect to the internet. On the other hand, IPv6 makes a significant advancement with its 128-bit addresses, providing a vast address space. This is especially important as more individuals are using smartphones, computers, and IoT devices to access public services. Additionally, IPv6 simplifies autoconfiguration and routing, making networks more scalable and reliable as demand keeps growing
 
-Resource: RFC 8200: Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
+Resource: RFC 8200: RFC 8200: Internet Protocol, Version 6 (IPv6) Specification — https://www.rfc-editor.org/rfc/rfc8200
 
 ## Cybersecurity
-Prompt injection occurs when malicious instructions attempt to manipulate an AI system into ignoring its intended rules. Direct prompt injection comes from a user's input, while indirect prompt injection is hidden in external content the assistant retrieves or processes. Two risk-reduction measures are to treat retrieved content as untrusted data and to restrict the assistant's permissions using least privilege. Input screening and testing can help, but no single defense eliminates every attack.
+Prompt injection is a sneaky tactic that attackers use to trick an AI assistant into executing harmful commands. There are two main types: direct prompt injection, where the malicious text is fed straight into the assistant, and indirect prompt injection, which cleverly hides harmful instructions within external data, like a webpage. To reduce these risks, developers can set up filters for inputs and restrict the external sources that the assistant is allowed to engage with.
 
-Resource: NIST AI 100-2 E2025: Adversarial Machine Learning - https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+Resource: OWASP Top 10 for LLM Applications — https://owasp.org/www-project-top-10-for-llms (owasp.org in Bing)
 
 ## Data
-Anonymization removes identifying information so that a person can no longer be identified using means reasonably likely to be used. Pseudonymization replaces direct identifiers with codes or aliases, but a person may still be re-identified using additional information kept separately. Therefore, pseudonymized chat logs remain personal data under the GDPR. Properly anonymized data may fall outside the GDPR's scope if identification is no longer reasonably possible. The government entity should assess re-identification risks before treating logs as anonymous.
+Anonymization wipes out all identifiers, making it impossible to trace the data back to an individual, which means it falls outside the realm of data protection laws. On the other hand, pseudonymization swaps out identifiers for codes, allowing for re-identification if you have access to the mapping, so it still falls under data protection regulations. When it comes to storing chat logs, anonymization provides a higher level of privacy, while pseudonymization allows for analysis with restricted access.
 
-Resource: GDPR Article 4 and Recital 26 - https://gdpr-info.eu/art-4-gdpr/
+Resource: GDPR Article 4 — Definitions of Personal Data, Anonymization, and Pseudonymization — https://gdpr-info.eu/art-4-gdpr
 
 ## Misconception in My Track
 A common misconception is that every API change requires a MAJOR version increase. In fact, Semantic Versioning distinguishes changes by their compatibility with the existing public API. A backward-compatible bug fix requires a PATCH release, while adding backward-compatible functionality requires a MINOR release. A change that breaks backward compatibility requires a MAJOR release. Therefore, the project team should evaluate compatibility before selecting a version number. The Semantic Versioning specification states: “MAJOR version when you make incompatible API changes.”
